@@ -54,7 +54,7 @@ The most useful version is version 2.1, 2.2.
 Command line example of final2-2.2.1.py:
 > python final2-2.2.1.py -i <input folder> -m <mutation file> ###USAGE
 
-> python final2-2.2.1.py -i Genome_GRCh37 -m zids.pickle ###EXAMPLE
+> python final2-2.2.1.py -i Genome_GRCh37 -m Z.variantCall.SNP_filt.vcf #or zids.pickle if generated ###EXAMPLE
 
 > ###generate mutation site figures and changed sites.
 
