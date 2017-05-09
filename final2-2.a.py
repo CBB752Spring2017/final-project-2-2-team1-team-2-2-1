@@ -62,7 +62,7 @@ def runCSR(ifolder, mutfile, sfolder):
                 ax1.scatter(pos_sel, np.ones(len(pos_sel)))
                 ax1.set_xlabel('Position on chr '+str(chrom))
                 # ax1.set_ylabel('if there is \'NGG\'')
-                ax1.set_title('Chr '+str(chrom)+'reference')
+                ax1.set_title('Chr '+str(chrom)+', reference')
                 zos_sel = zos[0:100]
                 ax2.scatter(zos_sel, np.ones(len(zos_sel)))
                 ax2.set_xlabel('Position on chr '+str(chrom))
@@ -90,7 +90,7 @@ def runCSR(ifolder, mutfile, sfolder):
                 ax1.scatter(bins_mean1, n1, s=1)
                 ax1.set_ylim((0, max(n1)*1.25))
                 ax1.set_xlabel('Position on chr '+str(chrom))
-                ax1.set_title('Chr '+str(chrom)+', Zimmerome')
+                ax1.set_title('Chr '+str(chrom)+', reference')
                 bins_mean2 = [0.5 * (bins2[i] + bins2[i+1]) for i in range(len(n2))]
                 ax2.scatter(bins_mean2, n2, s=1)
                 # ax2.set_ylim((0, max(n1)*1.25))
