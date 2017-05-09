@@ -82,7 +82,7 @@ def runCSR(ifolder, mutfile):
         #     ax2.set_title('Chr '+str(chrom)+', Zimmerome')
         #     plt.savefig('Histogram_chr'+str(chrom)+'.png')
         #     # plt.close(f)
-        #
+        
         #     ## third: scatterplot of histogram of NGG site rates on different positions
         #     n1,bins1,patches1 = plt.hist(pos, bins=10000, normed=True)
         #     n2,bins2,patches2 = plt.hist(zos, bins=10000, normed=True)
