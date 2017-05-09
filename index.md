@@ -6,7 +6,7 @@ tagline: Final Project
 
 Project Title
 ------------------
-
+Personal genomes and personalized medicine (CRISPR)
 
 Table of Contents
 -----------------------
