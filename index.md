@@ -6,7 +6,7 @@ tagline: Final Project
 
 Project Title
 ------------------
-Personal genomes and personalized medicine (CRISPR)
+CRISPR and personal genomics: The impact of SNPs on sgRNA sets and off target mutations
 
 Table of Contents
 -----------------------
