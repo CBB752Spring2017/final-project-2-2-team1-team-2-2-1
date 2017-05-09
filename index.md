@@ -60,8 +60,8 @@ Command line example of final2-2.2.1.py:
 
 ##### Requirement
 Here I use Python 2.7. 
-Files needed include Zimmerome SNP file (Z.variantCall.SNPs.vcf, but its comment was removed to generate a readable table), 
-reference genome sequence (here I use GRCh37 downloaded).
+Files needed include Zimmerome SNP file (Z.variantCall.SNPs.vcf, from https://zimmerome.gersteinlab.org/2016/05/06/part01_gerstein/, but its comment was removed to generate a readable table), 
+reference genome sequence (here I use GRCh37 downloaded from UCSC Genome Browser).
 
 #### Results:
 Results include 3 parts:
