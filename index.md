@@ -36,6 +36,7 @@ Table of Contents
 
 ### Coding:
 Propose a tool that finds PAM sites in the human reference genome as well as Carl’s genome and compares the similarity of the two sets.
+Here final2-2.a.py is the integrated version, and final2-2.2.1.py and final2-2.2.2.py are functionally separate versions.
 
 #### Documentation:
 ##### final2-2.0.py
@@ -67,23 +68,28 @@ Version 4/a. This file basically integrates all the previous code together.
 
 ##### Usage
 The most useful version is version 2.1, 2.2.
-Command line example:
+
+Command line example of final2-2.2.1.py:
 > python final2-2.2.1.py -i <input folder> -m <mutation file> ###USAGE
 
 > python final2-2.2.1.py -i Genome_GRCh37 -m zids.pickle ###EXAMPLE
 
 > ###generate mutation site figures and changed sites.
 
-### Requirement
+##### Requirement
 Here I use Python 2.7. 
 Files needed include Zimmerome SNP file (Z.variantCall.SNPs.vcf, but its comment was removed to generate a readable table), 
 reference genome sequence (here I use GRCh37 downloaded).
 
 #### Results:
+Results include 3 parts:
+  1. Sample PAM sites distribution (plot out first 100 PAM sites of the two genomes against chromosome position): SamplePlot_chr*.png
+  2. Histogram of PAM sites distribution on different parts of genomes, 100 bins: Histogram_chr*.png
+  3. Scatterplot of PAM sites distribution on differetn parts of genomes, 10000 points: ScatterHist_chr*.png
+  4. List of gained and lost PAM sites due to Zimmerome SNPs by each chromosome: Difference_*.txt
+  5. Summary results of the effect of Zimmerome SNPs, including number of #PAM sites, #gained, %gained, #lost and %lost: ZSNPs_stats.txt
 
-
-
-
+They are in folder coding_results.
 
 
 ### Pipeline:
