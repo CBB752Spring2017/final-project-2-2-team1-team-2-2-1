@@ -76,6 +76,24 @@ They are all in folder ./coding_results. It shows that PAM sites have an uneven 
 
 ### Pipeline:
 
+Guidescan was used to create a genomic guide RNA library for the Zimmerome and the reference genome.
+
+1. Create a python virtualenv for guidescan.  Source this environment
+2. Use pip to acquire all guidescan dependencies in this vitual env
+3. Download and install guidescan. http://www.guidescan.com/
+4. Download the reference genome guidescan database and BAM index from http://www.guidescan.com/
+5. Acquire the human genome annotation http://www.ensembl.org/info/data/ftp/index.html
+6. Clean the GFF labels by appending 'chr' using GFFUtil. http://gffutils.readthedocs.io/en/latest/index.html#
+7. Convert the GFF to BED format using bedops gff2bed
+8. Split the bed file into batches of 1000 using unix `split`
+8. Acquire Carl's consensus sequence using `wget http://archive.gersteinlab.org/proj/zimmerome/Shapiro-UCSC/carl.psmc.fq.gz`
+9. To extract the reference genome targets, perform the following tasks:
+ 1. Build an output directory tree for the reference guidescan. In the split.bed directory, `find * | xargs -n 1 -P 32 -I '{}' mkdir output/'{}'
+ 2. Run a batch job of guidescan_guidequery on the split.bed files and the reference genome. `find * | xargs -n 1 -P32 -I '{}' guidescan_guidequery -b [PATH_TO_HG38_BAM] --target within --batch '{}' -o test/'{}'/
+10. Build a guidescan database for the zimmerome using `guidescan_processer -f carl.fasta -t 16 -d 1`
+Repeat step 9 for the the Carl BAM that results.
+11. Concatenate output files
+12. Parse concatenated output files for downstream statistics.
 
 #### Documentation:
 
