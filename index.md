@@ -86,14 +86,14 @@ Guidescan was used to create a genomic guide RNA library for the Zimmerome and t
 6. Clean the GFF labels by appending 'chr' using GFFUtil. http://gffutils.readthedocs.io/en/latest/index.html#
 7. Convert the GFF to BED format using bedops gff2bed
 8. Split the bed file into batches of 1000 using unix `split`
-8. Acquire Carl's consensus sequence using `wget http://archive.gersteinlab.org/proj/zimmerome/Shapiro-UCSC/carl.psmc.fq.gz`
-9. To extract the reference genome targets, perform the following tasks:
+9. Acquire Carl's consensus sequence using `wget http://archive.gersteinlab.org/proj/zimmerome/Shapiro-UCSC/carl.psmc.fq.gz`
+10. To extract the reference genome targets, perform the following tasks:
  - Build an output directory tree for the reference guidescan. In the split.bed directory, `find * | xargs -n 1 -P 32 -I '{}' mkdir output/'{}'
  - Run a batch job of guidescan_guidequery on the split.bed files and the reference genome. `find * | xargs -n 1 -P32 -I '{}' guidescan_guidequery -b [PATH_TO_HG38_BAM] --target within --batch '{}' -o test/'{}'/
-10. Build a guidescan database for the zimmerome using `guidescan_processer -f carl.fasta -t 16 -d 1`
-Repeat step 9 for the the Carl BAM that results.
-11. Concatenate output files
-12. Parse concatenated output files for downstream statistics.
+11. Build a guidescan database for the zimmerome using `guidescan_processer -f carl.fasta -t 16 -d 1`
+Repeat step 10 for the the Carl BAM that results.
+12. Concatenate output files
+13. Parse concatenated output files for downstream statistics.
 
 #### Documentation:
 
