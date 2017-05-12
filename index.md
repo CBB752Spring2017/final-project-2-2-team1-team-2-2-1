@@ -16,11 +16,11 @@ Table of Contents
 
 **Contributors**
 
- -Writing:
+ -Writing: Acer Xu
  
  -Coding: Jiawei Wang
  
- -Pipeline:
+ -Pipeline: Jay Stanley
 
 ### Introduction:
 
