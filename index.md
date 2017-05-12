@@ -110,28 +110,31 @@ Repeat step 10 for the the Carl BAM that results.
 
 #### Documentation:
 
-Pybedtools was used to import guidescanned .bed files into 
+Pybedtools was used to import and manage guidescanned .bed files for comparison.
+Matplotlib and numpy were used to perform plotting, binning, and statistics.
 #### Results:
 
-
-
-
-
+The 50mb guide RNA coverage for both genomes is plotted below.
 
 ![image](https://raw.githubusercontent.com/CBB752Spring2017/final-project-2-2-team1-team-2-2-1/master/chr1_zimmervshg38.png)
 
 
+The mean coverage for Carl's genome was slightly higher than hg38: 6.7% to 6.0%, respectively.
+
+An intersection between the two sets was performed to identify the average overlap per 50mb of the two sets.
+
+
+Kullback-leibler distance was also computed, for the coverage maps, however this statistic was not useful due to its trivial result (infinite relative entropy, implying that the coverage maps do not contain any information about each other).
+
+
 #### Conclusions:
 
+Basic descriptive statistics revealed that Carl's guide RNA library is not much different in coverage than the guide RNA library for hg38.  Early results suggest that the personal genome is slightly more enriched in guides than the draft.
+Future directions should examine coverage in the light of feature annotations (eg exon versus intron coverage).  However, these are not expected to differ significantly between the two sets.
 
+The 0.7% difference in coverage between the Zimmerome and the reference genome is intriguing.  Future analysis should be performed to examine specific areas of enrichment.
 
+Finally, new software must be developed for the generation and comparison of large, whole genome guideRNA libraries.
 
-
-
-
-
-#### References:
-
- References can be included here or at the end of each relevant section.
  
  
