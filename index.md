@@ -17,16 +17,14 @@ Table of Contents
 
 **Contributors**
 
- -Writing: Acer Xu
- 
- -Coding: Jiawei Wang
- 
+ -Writing: Acer Xu  
+ -Coding: Jiawei Wang  
  -Pipeline: Jay Stanley
 
 ### Introduction:
- &nbsp;How might SNPs in Carl’s genome impact the use of CRISPR as a treatment?  
- &nbsp;How to find PAM sites in the human reference genome as well as Carl’s genome and what are their similarities?  
- &nbsp;How to calculate the sgRNA libraries for the reference genome and Carl’s genome and different are these two sets?  
+How might SNPs in Carl’s genome impact the use of CRISPR as a treatment?  
+How to find PAM sites in the human reference genome as well as Carl’s genome and what are their similarities?  
+How to calculate the sgRNA libraries for the reference genome and Carl’s genome and different are these two sets?  
 This project answers the three basic questions above and more.
 
 
