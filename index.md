@@ -132,7 +132,10 @@ Kullback-leibler distance was also computed, for the coverage maps, however this
 Basic descriptive statistics revealed that Carl's guide RNA library is not much different in coverage than the guide RNA library for hg38.  Early results suggest that the personal genome is slightly more enriched in guides than the draft.
 Future directions should examine coverage in the light of feature annotations (eg exon versus intron coverage).  However, these are not expected to differ significantly between the two sets.
 
+The intersection map exhibits a steep falloff between the first 50mb to the rest of the chromosome.  We hypothesize this trend is linked to conserved structural regions at the end of the chromosome.
+
 The 0.7% difference in coverage between the Zimmerome and the reference genome is intriguing.  Future analysis should be performed to examine specific areas of enrichment.
+
 
 Finally, new software must be developed for the generation and comparison of large, whole genome guideRNA libraries.
 
