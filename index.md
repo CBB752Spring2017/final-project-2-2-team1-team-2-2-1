@@ -129,7 +129,8 @@ The mean coverage per base for Carl's genome was slightly higher than hg38: 6.7%
 Ln-fold change was calculated for coverage between the Zimmerome and hg38.
 ![image](https://raw.githubusercontent.com/CBB752Spring2017/final-project-2-2-team1-team-2-2-1/master/coverage_change.png)
 
-
+Unique guides per 50mb was calculated.
+![image](https://github.com/CBB752Spring2017/final-project-2-2-team1-team-2-2-1/blob/master/uniques.png?raw=true)
 
 Kullback-leibler distance was also computed, for the coverage maps, however this statistic was not useful due to its trivial result (infinite relative entropy, implying that the coverage maps do not contain any information about each other).
 
