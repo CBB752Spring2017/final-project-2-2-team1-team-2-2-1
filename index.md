@@ -16,7 +16,9 @@ Table of Contents
 
 **Contributors**
  -Writing:
+ 
  -Coding: Jiawei Wang
+ 
  -Pipeline:
 
 ### Introduction:
