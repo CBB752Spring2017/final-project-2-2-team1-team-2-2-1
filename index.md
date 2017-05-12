@@ -108,7 +108,7 @@ Repeat step 10 for the the Carl BAM that results.
 
 
 
-[image](https://github.com/CBB752Spring2017/final-project-2-2-team1-team-2-2-1/blob/master/chr1_zimmervshg38.png)
+[image](https://github.com/CBB752Spring2017/final-project-2-2-team1-team-2-2-1/blob/master/chr1_zimmervshg38.png?raw=true)
 
 
 #### Conclusions:
