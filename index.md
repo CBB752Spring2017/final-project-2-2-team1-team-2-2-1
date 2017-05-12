@@ -114,6 +114,12 @@ Pybedtools was used to import and manage guidescanned .bed files for comparison.
 Matplotlib and numpy were used to perform plotting, binning, and statistics.
 #### Results:
 
+The corresponding guide libraries for chromosome 1 are included in this repository as `hg38_chr1.bed` and `zimmer_chr1_guides_cleaned.bed`.  The Zimmerome contains 16731494 guides on chromosome 1.  Hg38 contains 14932113 guides on chromosome 1.
+
+Intersecting these libraries revealed 4626338 unique guides for the zimmerome and 3414224 unique guides in hg38.
+These intersections are included in this repository as `chr1_unique_zimmer.bed` and `chr1_unique_hg38.bed`.
+
+
 The 50mb guide RNA coverage for both genomes is plotted below.
 
 ![image](https://raw.githubusercontent.com/CBB752Spring2017/final-project-2-2-team1-team-2-2-1/master/chr1_zimmervshg38.png)
@@ -122,7 +128,7 @@ The mean coverage per base for Carl's genome was slightly higher than hg38: 6.7%
 
 Ln-fold change was calculated for coverage between the Zimmerome and hg38.
 ![image](https://raw.githubusercontent.com/CBB752Spring2017/final-project-2-2-team1-team-2-2-1/master/coverage_change.png)
-An intersection between the two sets was performed to identify the average overlap per 50mb of the two sets.
+
 
 
 Kullback-leibler distance was also computed, for the coverage maps, however this statistic was not useful due to its trivial result (infinite relative entropy, implying that the coverage maps do not contain any information about each other).
