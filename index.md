@@ -118,8 +118,7 @@ The 50mb guide RNA coverage for both genomes is plotted below.
 
 ![image](https://raw.githubusercontent.com/CBB752Spring2017/final-project-2-2-team1-team-2-2-1/master/chr1_zimmervshg38.png)
 
-
-The mean coverage for Carl's genome was slightly higher than hg38: 6.7% to 6.0%, respectively.
+The mean coverage per base for Carl's genome was slightly higher than hg38: 6.7% to 6.0%, respectively.
 
 An intersection between the two sets was performed to identify the average overlap per 50mb of the two sets.
 
@@ -130,11 +129,11 @@ Kullback-leibler distance was also computed, for the coverage maps, however this
 #### Conclusions:
 
 Basic descriptive statistics revealed that Carl's guide RNA library is not much different in coverage than the guide RNA library for hg38.  Early results suggest that the personal genome is slightly more enriched in guides than the draft.
-Future directions should examine coverage in the light of feature annotations (eg exon versus intron coverage).  However, these are not expected to differ significantly between the two sets.
+
 
 The intersection map exhibits a steep falloff between the first 50mb to the rest of the chromosome.  We hypothesize this trend is linked to conserved structural regions at the end of the chromosome.
 
-The 0.7% difference in coverage between the Zimmerome and the reference genome is intriguing.  Future analysis should be performed to examine specific areas of enrichment.
+The 0.7% difference in coverage between the Zimmerome and the reference genome is intriguing.  Future analysis should be performed to examine specific areas of enrichment in the light of annotations (eg exon versus intron coverage).  However, these are not expected to differ significantly between the two sets, given that the distribution of NGGs is probabilistic.
 
 
 Finally, new software must be developed for the generation and comparison of large, whole genome guideRNA libraries.
