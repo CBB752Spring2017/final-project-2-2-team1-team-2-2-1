@@ -15,12 +15,6 @@ Table of Contents
 * [Coding](#coding)
 * [Pipeline](#pipeline)
 
-**Contributors**
-
- -Writing: Acer Xu  
- -Coding: Jiawei Wang  
- -Pipeline: Jay Stanley
-
 ### Introduction:
 How might SNPs in Carl’s genome impact the use of CRISPR as a treatment?  
 How to find PAM sites in the human reference genome as well as Carl’s genome and what are their similarities?  
